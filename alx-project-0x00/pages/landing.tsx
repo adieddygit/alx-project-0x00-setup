@@ -9,10 +9,21 @@ const Landing: React.FC = () => {
 
       <Card />
 
-      <div className="flex flex-wrap gap-4">
-        <Button title="Add" styles="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md" />
-        <Button title="Delete" styles="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md" />
-        <Button title="Submit" styles="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md" />
+      <div className="flex flex-wrap justify-center gap-4">
+        {/* Small Buttons */}
+        <Button title="Small Rounded-sm" styles="text-sm px-3 py-1 rounded-sm" />
+        <Button title="Small Rounded-md" styles="text-sm px-3 py-1 rounded-md" />
+        <Button title="Small Rounded-full" styles="text-sm px-3 py-1 rounded-full" />
+
+        {/* Medium Buttons */}
+        <Button title="Medium Rounded-sm" styles="text-base px-4 py-2 rounded-sm" />
+        <Button title="Medium Rounded-md" styles="text-base px-4 py-2 rounded-md" />
+        <Button title="Medium Rounded-full" styles="text-base px-4 py-2 rounded-full" />
+
+        {/* Large Buttons */}
+        <Button title="Large Rounded-sm" styles="text-lg px-6 py-3 rounded-sm" />
+        <Button title="Large Rounded-md" styles="text-lg px-6 py-3 rounded-md" />
+        <Button title="Large Rounded-full" styles="text-lg px-6 py-3 rounded-full" />
       </div>
     </div>
   );
