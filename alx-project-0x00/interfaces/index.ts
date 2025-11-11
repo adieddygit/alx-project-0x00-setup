@@ -7,6 +7,6 @@ export interface ButtonProps{
     size?: "small" | "medium" | "large" ;// Determines padding;
     shape?: "rounded-sm" | "rounded-md" | "rounded-full"; // Determines border-radius;
     className?: string; // For passing custom CSS classes.
-    styles?: string; // For custom inline styles.
+    styles: string; // For custom inline styles.
     onClick?: ()=> void; // Event handler for click events.
 }
